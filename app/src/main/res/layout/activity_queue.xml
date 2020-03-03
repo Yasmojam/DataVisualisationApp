@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id = "@+id/queueLayout"
+    tools:context=".Activities.QueueActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addQueueInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="103dp"
+            android:layout_marginLeft="103dp"
+            android:layout_marginEnd="103dp"
+            android:layout_marginRight="103dp"
+            android:layout_marginBottom="8dp"
+            android:hint="@string/addToQueue"
+            android:singleLine="true"
+            app:layout_constraintBottom_toTopOf="@+id/dequeueButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/dequeueButton"
+            android:layout_width="93dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="40dp"
+            android:text="@string/dequeueButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/clearQueueButton"
+            app:layout_constraintStart_toEndOf="@+id/enqueueButton" />
+
+        <Button
+            android:id="@+id/enqueueButton"
+            android:layout_width="93dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="40dp"
+            android:text="@string/enqueueButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/dequeueButton"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/clearQueueButton"
+            android:layout_width="93dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginBottom="40dp"
+            android:text="@string/clearQButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/dequeueButton"
+            app:layout_constraintTop_toBottomOf="@+id/addQueueInput"
+            app:layout_constraintVertical_bias="0.472" />
+
+        <TextView
+            android:id="@+id/elementQView0"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/elementQView4"
+            app:layout_constraintEnd_toStartOf="@+id/elementQView1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/elementQView1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/elementQView5"
+            app:layout_constraintEnd_toStartOf="@+id/elementQView2"
+            app:layout_constraintStart_toEndOf="@+id/elementQView0"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/elementQView2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/elementQView6"
+            app:layout_constraintEnd_toStartOf="@+id/elementQView3"
+            app:layout_constraintStart_toEndOf="@+id/elementQView1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/elementQView3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/elementQView7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/elementQView2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/elementQView4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/elementQView8"
+            app:layout_constraintEnd_toStartOf="@+id/elementQView5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/elementQView0" />
+
+        <TextView
+            android:id="@+id/elementQView5"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/elementQView9"
+            app:layout_constraintEnd_toStartOf="@+id/elementQView6"
+            app:layout_constraintStart_toEndOf="@+id/elementQView4"
+            app:layout_constraintTop_toBottomOf="@+id/elementQView1" />
+
+        <TextView
+            android:id="@+id/elementQView6"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/elementQView10"
+            app:layout_constraintEnd_toStartOf="@+id/elementQView7"
+            app:layout_constraintStart_toEndOf="@+id/elementQView5"
+            app:layout_constraintTop_toBottomOf="@+id/elementQView2" />
+
+        <TextView
+            android:id="@+id/elementQView7"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/elementQView11"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/elementQView6"
+            app:layout_constraintTop_toBottomOf="@+id/elementQView3" />
+
+        <TextView
+            android:id="@+id/elementQView8"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/addQueueInput"
+            app:layout_constraintEnd_toStartOf="@+id/elementQView9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/elementQView4" />
+
+        <TextView
+            android:id="@+id/elementQView9"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/addQueueInput"
+            app:layout_constraintEnd_toStartOf="@+id/elementQView10"
+            app:layout_constraintStart_toEndOf="@+id/elementQView8"
+            app:layout_constraintTop_toBottomOf="@+id/elementQView5" />
+
+        <TextView
+            android:id="@+id/elementQView10"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/addQueueInput"
+            app:layout_constraintEnd_toStartOf="@+id/elementQView11"
+            app:layout_constraintStart_toEndOf="@+id/elementQView9"
+            app:layout_constraintTop_toBottomOf="@+id/elementQView6" />
+
+        <TextView
+            android:id="@+id/elementQView11"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/addQueueInput"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/elementQView10"
+            app:layout_constraintTop_toBottomOf="@+id/elementQView7" />
+
+        <TextView
+            android:id="@+id/textQView0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="0"
+            app:layout_constraintBottom_toTopOf="@+id/elementQView0"
+            app:layout_constraintEnd_toEndOf="@+id/elementQView0"
+            app:layout_constraintStart_toStartOf="@+id/elementQView0" />
+
+        <TextView
+            android:id="@+id/textViewQ1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="1"
+            app:layout_constraintBottom_toTopOf="@+id/elementQView1"
+            app:layout_constraintEnd_toEndOf="@+id/elementQView1"
+            app:layout_constraintStart_toStartOf="@+id/elementQView1" />
+
+        <TextView
+            android:id="@+id/textViewQ2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="2"
+            app:layout_constraintBottom_toTopOf="@+id/elementQView2"
+            app:layout_constraintEnd_toEndOf="@+id/elementQView2"
+            app:layout_constraintStart_toStartOf="@+id/elementQView2" />
+
+        <TextView
+            android:id="@+id/textViewQ3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="3"
+            app:layout_constraintBottom_toTopOf="@+id/elementQView3"
+            app:layout_constraintEnd_toEndOf="@+id/elementQView3"
+            app:layout_constraintStart_toStartOf="@+id/elementQView3" />
+
+        <TextView
+            android:id="@+id/textViewQ4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="4"
+            app:layout_constraintBottom_toTopOf="@+id/elementQView4"
+            app:layout_constraintEnd_toEndOf="@+id/elementQView4"
+            app:layout_constraintStart_toStartOf="@+id/elementQView4" />
+
+        <TextView
+            android:id="@+id/textViewQ5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="5"
+            app:layout_constraintBottom_toTopOf="@+id/elementQView5"
+            app:layout_constraintEnd_toEndOf="@+id/elementQView5"
+            app:layout_constraintStart_toStartOf="@+id/elementQView5" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="6"
+            app:layout_constraintBottom_toTopOf="@+id/elementQView6"
+            app:layout_constraintEnd_toEndOf="@+id/elementQView6"
+            app:layout_constraintStart_toStartOf="@+id/elementQView6" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="7"
+            app:layout_constraintBottom_toTopOf="@+id/elementQView7"
+            app:layout_constraintEnd_toEndOf="@+id/elementQView7"
+            app:layout_constraintStart_toStartOf="@+id/elementQView7" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="8"
+            app:layout_constraintBottom_toTopOf="@+id/elementQView8"
+            app:layout_constraintEnd_toEndOf="@+id/elementQView8"
+            app:layout_constraintStart_toStartOf="@+id/elementQView8" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="9"
+            app:layout_constraintBottom_toTopOf="@+id/elementQView9"
+            app:layout_constraintEnd_toEndOf="@+id/elementQView9"
+            app:layout_constraintStart_toStartOf="@+id/elementQView9" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="10"
+            app:layout_constraintBottom_toTopOf="@+id/elementQView10"
+            app:layout_constraintEnd_toEndOf="@+id/elementQView10"
+            app:layout_constraintStart_toStartOf="@+id/elementQView10" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="11"
+            app:layout_constraintBottom_toTopOf="@+id/elementQView11"
+            app:layout_constraintEnd_toEndOf="@+id/elementQView11"
+            app:layout_constraintStart_toStartOf="@+id/elementQView11" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>

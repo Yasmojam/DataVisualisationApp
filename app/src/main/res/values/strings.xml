@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name" translatable="false">Data Structure Visualisation App</string>
+    <string name="appTitle">Visualisation App!</string>
+    <string name="stackButton">Stack</string>
+    <string name="queueButton">Queue</string>
+    <string name="primsButton">Prim\'s Algorithm</string>
+    <string name="resetButton">Reset</string>
+    <string name="startButton">Start</string>
+    <string name="primsInstruction">Tap to create vertices!</string>
+    <string name="addToStack">Add an item to the stack!</string>
+    <string name="pushButton">Push</string>
+    <string name="popButton">Pop</string>
+    <string name="clearButton">Clear Stack</string>
+    <string name="stackTitle">Stack Visualisation</string>
+    <string name="addToQueue">Add an item to the queue!</string>
+    <string name="enqueueButton">Enqueue</string>
+    <string name="dequeueButton">Dequeue</string>
+    <string name="clearQButton">Clear Queue</string>
+</resources>
